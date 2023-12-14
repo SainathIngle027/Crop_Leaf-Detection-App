@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:text="Title"
+        android:text="Leaf Disease Detection"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="32sp"
@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/objtit"
         android:layout_marginLeft="20dp"
+        android:background="#E3F2FD"
         android:layout_marginTop="6dp"
         android:layout_marginRight="20dp"
         app:cardCornerRadius="16dp">
@@ -80,15 +81,5 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:layout_width="160dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/resultcard"
-        android:id="@+id/knowinfo"
-        android:text="Know More"
-        android:layout_centerHorizontal="true">
-
-    </Button>
 
 </RelativeLayout>

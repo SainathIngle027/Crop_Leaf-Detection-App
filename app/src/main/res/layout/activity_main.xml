@@ -54,11 +54,12 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/navigateButton"
+        android:id="@+id/googlebt"
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:text="Scam Image"
+        android:layout_height="70dp"
+        android:text="Login With Google"
         android:textSize="30dp"
+        android:backgroundTint="#3949AB"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="570dp"/>
 

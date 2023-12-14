@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:text="Dr. Leaf"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/namecard"
+        android:layout_below="@+id/title"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user"
+                android:layout_margin="10dp">
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:gravity="center">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/usermail"
+                android:textSize="24dp"
+                android:layout_margin="5dp"
+                android:gravity="center">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:id="@+id/navigatebt"
+        android:layout_below="@id/namecard"
+        android:backgroundTint="#5C6BC0"
+        android:layout_marginTop="20dp"
+        android:text="Scan Image"
+        android:textSize="28dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myhist"
+        android:layout_marginTop="10dp"
+        android:text="My History"
+        android:layout_below="@id/navigatebt"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FF241F">
+    </TextView>
+
+    <!-- RecyclerView for displaying history -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myhist"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:padding="10dp"
+        android:backgroundTint="#FFFDE7"
+        android:clipToPadding="false"/>
+
+
+</RelativeLayout>
